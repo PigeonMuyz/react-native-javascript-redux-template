@@ -1,0 +1,68 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": "airbnb",
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "rules": {
+    "react/destructuring-assignment": [0],
+    "class-methods-use-this": [0],
+    "react/jsx-props-no-spreading": [0],
+    "react/no-unstable-nested-components": [0],
+    "arrow-body-style": [0],
+    "array-callback-return": [0],
+    "consistent-return": [0],
+    "generator-star-spacing": [0],
+    "global-require": [0],
+    "import/extensions": [0],
+    "import/no-extraneous-dependencies": [0],
+    "import/no-unresolved": [0],
+    "import/prefer-default-export": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "no-bitwise": [0],
+    "no-cond-assign": [0],
+    "no-else-return": [0],
+    "no-nested-ternary": [0],
+    "no-restricted-syntax": [0],
+    "no-use-before-define": [0],
+    "react/forbid-prop-types": [0],
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".js"] }],
+    "react/jsx-no-bind": [0],
+    "react/prefer-stateless-function": [0],
+    "react/prop-types": [0],
+    "react/sort-comp": [0],
+    "require-yield": [1],
+    "linebreak-style": [0],
+    "func-names": [0],
+    "no-param-reassign": [0],
+    "prefer-const": [0],
+    "camelcase": [0],
+    "no-plusplus": [0],
+    "no-underscore-dangle": [0],
+    "curly": [0],
+    "no-restricted-properties": [0],
+    "no-return-assign": [0],
+    "react/no-string-refs": [0],
+    "max-len": [0],
+    "object-property-newline": [0],
+    // 新增禁用this警告
+    "react/no-this-in-sfc": [0],
+    // 禁用使用非回调方法更新State值的ES错误
+    "react/no-access-state-in-setstate": [0],
+    // 提高因当前文件中含有多个class的报错，从max 1提高到max 5，以供适应JSX写法
+    "max-classes-per-file": ["error", 5],
+    // 禁用JSX和React报错
+    "react/react-in-jsx-scope": [0],
+    // 禁用使用过时方法的报错
+    "react/no-deprecated": [0],
+    // 禁用不必要元素报错（特指在部分地方使用<></>框元素的错误）
+    "react/jsx-no-useless-fragment": [0],
+    "react/no-array-index-key": [0]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
