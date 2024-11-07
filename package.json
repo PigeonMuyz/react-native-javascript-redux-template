@@ -1,14 +1,13 @@
 {
     "name": "react-native-javascript-redux-template",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "description": "一个已经包含Axios，以及Redux并有示例配置的RN模板项目",
     "scripts": {
       "test": "exit 0"
     },
     "files": [
       "template",
-      "template.config.js",
-      "postInit.js"
+      "template.config.js"
     ],
     "repository": {
       "type": "git",
